@@ -1,0 +1,49 @@
+#resultado.green {
+    background-color: green;
+    color: white;
+}
+
+#resultado.red {
+    background-color: red;
+    color: white;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column; /* Cambiar a dirección de columna */
+    align-items: center;
+    justify-content: flex-start; /* Cambiar a alineación superior */
+    background-color: rgba(0, 0, 0, 0.5); /* Color de fondo para el contenido */
+    color: #fff; /* Color del texto */
+    text-align: center;
+}
+
+h1, h3, button {
+    margin: 10px; /* Espaciado entre elementos */
+}

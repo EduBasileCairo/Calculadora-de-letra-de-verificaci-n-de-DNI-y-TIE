@@ -1,0 +1,42 @@
+<!--
+Calcular la letra de un DNI o de la TIE
+https://www.interior.gob.es/opencms/ca/servicios-al-ciudadano/tramites-y-gestiones/dni/calculo-del-digito-de-control-del-nif-nie/
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcula la letra del DNI o la TIE</title>
+    <link rel="stylesheet" href="estilos.css">
+    <script src="039_Ejercicios.js"></script>
+</head>
+
+<body>
+    <div class="video-container">
+        <video autoplay loop muted>
+            <source src="bandera_e_himno_espana.mp4" type="video/mp4">
+        </video>
+        <div class="content">
+            <h1>Esta página comprueba si el documento de España informado es válido en cuanto a sus letras y números, tanto DNI como TIE</h1>
+            <!-- Contenido adicional se coloca aquí -->
+            <form id="documentoForm">
+                <label for="letra1">Letra inicial del documento:</label>
+                <input type="text" id="letra1" name="letra1" required>
+        
+                <label for="numero">Número de documento (sin la letra):</label>
+                <input type="text" id="numero" name="numero" required>
+        
+                <label for="letra">Letra final del documento (en mayúsculas):</label>
+                <input type="text" id="letra" name="letra" required>
+        
+                <button type="submit" id="calcularDNI">COMPROBAR</button>
+            </form>
+         <!-- <button id="calcularDNI">Comprueba el documento en 3 pasos</button> -->
+    <h3 id="resultado"></h3>   
+    </div>
+    </div>
+</body>
+
+</html>
